@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ContributeInfo() {
   return (
     <div className="justify-self-center text-center w-250">
@@ -6,6 +8,13 @@ export default function ContributeInfo() {
         >
             Contribute Here
         </a>
+        <Image
+          className="justify-self-center mt-24 rounded-md"
+          src="/qr-code.png"
+          alt="qrcode"
+          width={200}
+          height={200}
+        />
     </div>
   );
 }
